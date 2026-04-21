@@ -19,7 +19,7 @@ const SignUpComponent = () => {
     // const [confirmPassword, setConfirmPassword] = useState("");
     const [username, setUsername] = useState("");
 
-    const [cookies, setCookie] = useCookies(['token']);
+    const [,] = useCookies(['token']);
 
     const signUp = async () => {
 

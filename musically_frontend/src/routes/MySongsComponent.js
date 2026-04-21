@@ -114,7 +114,7 @@ const MySongsComponent = () => {
     const [songData, setSongData] = useState([]);
     const [playlists, setPlaylists] = useState([]);
     const { theme } = useContext(ThemeContext);
-    const { playSound, user } = useContext(songContext);
+    const { user } = useContext(songContext);
 
     useEffect(() => {
         const getData = async () => {

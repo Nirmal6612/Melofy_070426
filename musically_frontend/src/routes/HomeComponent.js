@@ -89,7 +89,7 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import songContext from '../contexts/songContext'
-import { makeAuthenticatedGETRequests } from '../utils/serverHelpers'
+
 
 const HomeComponent = () => {
 

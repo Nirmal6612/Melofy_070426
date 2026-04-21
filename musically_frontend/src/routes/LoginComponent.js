@@ -128,7 +128,7 @@ import { Icon } from '@iconify/react';
 import ThemeToggle from '../components/shared/ThemeToggle';
 
 const LoginComponent = () => {
-    const [cookie, setCookie] = useCookies(['token']);
+    const [, setCookie] = useCookies(['token']);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();

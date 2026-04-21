@@ -18,7 +18,7 @@ function App() {
   const [currentSong, setCurrentSong] = useState(null);
   const [isPaused, setIsPaused] = useState(true);
   const [soundPlayed, setSoundPlayed] = useState(null);
-  const [cookie, setCookie, removeCookie] = useCookies(['token', 'user']);
+  const [cookie, , removeCookie] = useCookies(['token', 'user']);
 
   const logout = () => {
     removeCookie('token', { path: '/' });

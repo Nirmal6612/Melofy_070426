@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import React, { useContext, useLayoutEffect, useRef, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Howl } from 'howler';
 import { Icon } from '@iconify/react';
 import { Link, useNavigate } from 'react-router-dom';
@@ -15,6 +15,7 @@ const LoggedInContainer = ({ children }) => {
     const navigate = useNavigate();
     const location = useLocation();
     
+    /* eslint-disable react-hooks/exhaustive-deps */
     useEffect(() => {
     if (!currentSong) return;
 
@@ -29,6 +30,7 @@ useEffect(() => {
     }
     setIsPaused(true);
 }, [location]);
+    /* eslint-enable react-hooks/exhaustive-deps */
 
     const getInitials = () => {
         const firstInitial = user?.firstName?.trim()?.[0] || '';

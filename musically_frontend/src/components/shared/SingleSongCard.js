@@ -4,7 +4,7 @@ import { useContext } from "react"
 
 const SingleSongCard = ({ info, playSound }) => {
 
-    const { currentSong, setCurrentSong } = useContext(songContext);
+    const { setCurrentSong } = useContext(songContext);
 
     return (
         <div
