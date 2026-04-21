@@ -111,7 +111,7 @@ const HomeComponent = () => {
         console.log("Clicked:", title);
         console.log("Category:", category);
 
-        const res = await fetch(`http://localhost:5000/song/get/category/${category}`);
+        const res = await fetch(`https://melofy-070426.onrender.com/song/get/category/${category}`);
         const data = await res.json();
 
         console.log("API Response:", data);

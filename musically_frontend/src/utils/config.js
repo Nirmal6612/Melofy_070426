@@ -1,1 +1,1 @@
-export const backendUrl = "http://localhost:5000"
+export const backendUrl = "https://melofy-070426.onrender.com"
